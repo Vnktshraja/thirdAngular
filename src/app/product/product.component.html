@@ -1,0 +1,13 @@
+<p> List of smartPhone Brands </p>
+<ul>
+  <li *ngFor = "let item of productList">{{item}}</li>
+</ul>
+
+<button (click)="remove()" [disabled]="!isAvailable()"> Remove </button>
+<br>
+<br>
+<hr>
+<app-products (deleteCar)="removeData()" [car]="carList"></app-products>
+<br>
+
+
