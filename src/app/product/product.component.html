@@ -3,11 +3,12 @@
   <li *ngFor = "let item of productList">{{item}}</li>
 </ul>
 
-<button (click)="remove()" [disabled]="!isAvailable()"> Remove </button>
+<button (click)="remove()" [disabled]="!isAvailableProduct()"> Remove </button>
 <br>
 <br>
 <hr>
-<app-products (deleteCar)="removeData()" [car]="carList"></app-products>
-<br>
 
+<app-products (deletecar)="removeData()" [car]="carList"></app-products>
+<br>
+<button (click)="removeData()" [disabled]="!isAvailablecar()"> Remove </button>
 

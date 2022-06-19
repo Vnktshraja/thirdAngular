@@ -24,12 +24,18 @@ export class ProductComponent implements OnInit {
     this.carList.pop();
   }
 
-  isAvailable(){
+  isAvailableProduct(){
       if(this.productList.length > 0)
         return true;
-      return false; 
-      
-    
+      return false;    
   }
+
+  isAvailablecar(){
+    if(this.productList.length > 0)
+      return true;
+    return false; 
+    
+  
+}
 
 }
